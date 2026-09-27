@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.10/p5.min.js"></script>
+
+<script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+
+<script src="sketch.js"></script>
+    <script src="posture.js"></script>
+    <title>Body posture detection</title>
+</head>
+<body>
+    <h1>body gesture detection</h1>v4q
+
+<div class="dev-profile-btn">
+    <a href="https://prakash-raj-mehta.github.io/portfolio/" target="_blank">
+        👨‍💻 View Developer Profile
+    </a>
+</div>
+
+<style>
+    /* Hide Streamlit default header */
+    header[data-testid="stHeader"] {
+        background: transparent;
+    }
+
+    /* Button container - fixed top right */
+    .dev-profile-btn {
+        margin-top: 80px;
+        position: fixed;
+        top: 18px;
+        right: 28px;
+        z-index: 9999;
+    }
+
+    .dev-profile-btn a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white !important;
+        text-decoration: none !important;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        letter-spacing: 0.3px;
+    }
+
+    .dev-profile-btn a:hover {
+        cursor: pointer;
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.55);
+        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    }
+
+    .dev-profile-btn a:active {
+        transform: translateY(-1px) scale(0.98);
+    }
+
+    /* Optional subtle pulse animation on load */
+    @keyframes softPulse {
+        0% { box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); }
+        50% { box-shadow: 0 4px 22px rgba(102, 126, 234, 0.6); }
+        100% { box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); }
+    }
+
+    .dev-profile-btn a {
+        animation: softPulse 2.5s ease-in-out infinite;
+    }
+
+    .dev-profile-btn a:hover {
+        animation: none;
+    }
+</style>
+
+
+
+
+    <!-- <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            width: 100%;
+        }
+        a{
+            width: 100%;
+        }
+        button{
+            height: 30px;
+            width: 250px;
+            color: blue;
+            background-color: yellow;
+            border: 2px solid red ;
+            border-radius: 5px;
+            margin-right: 50px;
+            font-weight: 700;
+        }
+        button:hover{
+            color: pink;
+            cursor: pointer;
+        }
+    </style> -->
+</body>
+</html>
